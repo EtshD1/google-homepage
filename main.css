@@ -150,6 +150,37 @@ html, body {
 }
 
 /* -------- */
+/* Footer */
+
+.hr {
+  width: 100%;
+  border-top: 1px solid #dadce0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 10vh;
+  align-items: center;
+  border-top: 1px solid #dadce0;
+  background-color: #f2f2f2;
+}
+
+footer > ul {
+  padding: 0 2rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer > ul > li > a {
+  color: #0000008a;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+
+/* -------- */
 /* Desktop */
 
 @media (min-width: 650px) {
@@ -159,5 +190,15 @@ html, body {
 
   .container {
     height: 85vh;
+  }
+
+  .hr {
+    display: none;
+  }
+
+  footer {
+    height: 5vh;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
